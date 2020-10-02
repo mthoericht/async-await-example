@@ -51,7 +51,7 @@ export class Main {
           });
     }
 
-    resolveAfterSeconds(seconds:number, description?:string):Promise<any>
+    resolveAfterSeconds(seconds:number, description?:string):Promise<MapesPromiseReturnType>
     {
         return new Promise ((resolve, reject) => 
         {
@@ -78,3 +78,5 @@ window.onload = () =>
 {
     const main: Main = new Main();
 };
+
+type MapesPromiseReturnType = {resolved:boolean, description:string};
