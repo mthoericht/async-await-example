@@ -66,9 +66,10 @@ export class Main {
                 {
                     resolve({resolved:true, description: description});
                 }, seconds * 1000);
+                
             } catch(e)
             {
-                return new Promise((resolve, reject) => { reject({resolved:false, description:description}) });
+                reject({resolved:false, description:description});
             }
         });
     }
