@@ -8,10 +8,10 @@ async function asyncCall()
 {
     console.log('start async call');
 
-    await callHeise();
-    console.log("call done")
-    await callHeise();
-    console.log("call done")
+    const call1 =  callHeise();
+    const call2 = callHeise();
+    console.log(await call1, "call 1 done");
+    console.log(await call2, "call 2 done");
     await callHeise();
     console.log("call done")
     await callHeise();
