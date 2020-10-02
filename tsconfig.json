@@ -1,0 +1,17 @@
+{
+	"compilerOptions": {
+		"target": "es2015",
+		"module": "commonjs",
+		"removeComments": true,
+		"sourceMap": true,
+		"watch": false,
+		"outDir": "build"
+	},
+	"filesGlob": [
+		"src/**/*.ts",
+		"src/**/*.json"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}
